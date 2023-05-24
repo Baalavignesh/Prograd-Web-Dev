@@ -4,9 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Color Picker</title>
+    <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div id="score">
+      <p>Score</p>
+      <div>
+        <span id="comp-score"></span>
+        <span> - </span>
+        <span id="user-score"></span>
+      </div>
+    </div>
+    <main>
+      <div id="computer">
+        <div class="my-heading"><span>COMPUTER</span></div>
+        <video id="video" src="./assets/makimavid.mp4" autoplay muted></video>
+
+        <img src="" id="comp-hand" />
+        <div id="choice" class="choice">
+          <p id="computer-choice">Computer is thinking</p>
+          <p style="margin: 1rem; padding: 0.5rem">...</p>
+        </div>
+      </div>
+      <div id="user">
+        <div class="my-heading"><span>USER</span></div>
+        <div id="user-choice">
+          <img id="user-hand" src="" />
+        </div>
+        <div class="choice">
+          <p id="computer-choice">Chose your move</p>
+          <button onclick="rock()">Rock</button>
+          <button onclick="paper()">Paper</button>
+          <button onclick="scissor()">Scissor</button>
+        </div>
+      </div>
+    </main>
+
+    <div id="result">
+      <p><span id="decision"></span></p>
+    </div>
+
+    <div class="reset" onclick="reset()">
+      <button style="font-size: 1rem; padding: 4px">Reset</button>
+    </div>
+  </body>
 </html>
