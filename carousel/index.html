@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Color Picker</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <ul id="carousel">
+      <li class="container 1" id="1"></li>
+      <li class="container 2" id="2"></li>
+      <li class="container 3" id="3"></li>
+      <li class="container 4" id="4"></li>
+      <li class="container 5" id="5"></li>
+    </ul>
+    <div class="navigator">
+      <div class="nav-icon" id="left" onclick="moveLeft()">Left</div>
+      <div class="nav-icon" id="right" onclick="moveRight()">Right</div>
+    </div>
+    <div class="items">
+      <input type="color" id="color-sel" class="color-picker" />
+
+      <ul id="my-colors">
+        <li class="color-pallet 1" id="1"></li>
+        <li class="color-pallet 2" id="2"></li>
+        <li class="color-pallet 3" id="3"></li>
+        <li class="color-pallet 4" id="4"></li>
+        <li class="color-pallet 5" id="5"></li>
+      </ul>
+    </div>
+  </body>
+</html>

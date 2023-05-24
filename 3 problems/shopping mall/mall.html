@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mall.styles.css" />
+    <script src="./mall_script.js"></script>
+  </head>
+  <body>
+
+    <h1>Welcome to Shopping Store</h1>
+    <h2>My Current GV is <span id="mygv"></span></h2>
+    <h2>Current Bill cost <span id="mybill"></span></h2>
+    <div>
+      <div class="item">
+        <p>iPhone 14</p>
+        <p>Price : Rs.5200</p>
+        <button onclick="phone(5200)">Buy Now</button>
+      </div>
+      <div class="item">
+        <p>iPhone 14 Case</p>
+        <p>Price : Rs.1200</p>
+
+        <button onclick="phone(1200)">Buy Now</button>
+      </div>
+      <div class="item">
+        <p>iPhone 14 TemperGlass</p>
+        <p>Price : Rs.10000</p>
+        <button onclick="phone(10000)">Buy Now</button>
+      </div>
+      <div class="item">
+        <p>iPhone 14</p>
+        <p>Price : Rs.80000</p>
+
+        <button onclick="phone(80000)">Buy Now</button>
+      </div>
+    </div>
+    <button onclick="generate_bill()">Generate Bill :)</button>
+  </body>
+</html>
